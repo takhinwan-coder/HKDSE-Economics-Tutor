@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title description">
+  <title id="title">廠商擁有權、擴張與結合圖解</title>
+  <desc id="description">圖解顯示獨資、合夥、有限公司三種擁有權，以及內部擴張與外部擴張下的水平、垂直和混合結合。</desc>
+  <style>
+    .heading { fill:#15324b; font:bold 29px 'Microsoft JhengHei',sans-serif; }
+    .boxheading { fill:#15324b; font:bold 21px 'Microsoft JhengHei',sans-serif; }
+    .detail { fill:#243247; font:17px 'Microsoft JhengHei',sans-serif; }
+    .box { stroke:#168c8c; stroke-width:3; rx:15; }
+  </style>
+  <rect width="1200" height="800" fill="#fff"/>
+  <text x="600" y="45" text-anchor="middle" class="heading">廠商：先辨認擁有權，再判斷如何擴張</text>
+  <rect x="45" y="86" width="1110" height="220" rx="16" fill="#f2f6f8" stroke="#cbd6df" stroke-width="2"/>
+  <text x="75" y="122" class="boxheading">一、擁有權：誰擁有及承擔責任？</text>
+  <rect x="75" y="150" width="305" height="125" fill="#eef7f6" class="box"/><text x="228" y="188" text-anchor="middle" class="boxheading">獨資</text><text x="228" y="220" text-anchor="middle" class="detail">一名東主擁有</text><text x="228" y="250" text-anchor="middle" class="detail">通常無限責任</text>
+  <rect x="448" y="150" width="305" height="125" fill="#eef7f6" class="box"/><text x="600" y="188" text-anchor="middle" class="boxheading">合夥</text><text x="600" y="220" text-anchor="middle" class="detail">兩名或以上合夥人</text><text x="600" y="250" text-anchor="middle" class="detail">共同出資及管理</text>
+  <rect x="820" y="150" width="305" height="125" fill="#eef7f6" class="box"/><text x="972" y="188" text-anchor="middle" class="boxheading">有限公司</text><text x="972" y="220" text-anchor="middle" class="detail">公司與股東分開</text><text x="972" y="250" text-anchor="middle" class="detail">股東通常有限責任</text>
+  <rect x="45" y="350" width="1110" height="395" rx="16" fill="#f2f6f8" stroke="#cbd6df" stroke-width="2"/>
+  <text x="75" y="388" class="boxheading">二、擴張：廠商如何增加規模？</text>
+  <rect x="85" y="425" width="375" height="260" fill="#eef7f6" class="box"/><text x="272" y="465" text-anchor="middle" class="boxheading">內部擴張（自然增長）</text><text x="272" y="505" text-anchor="middle" class="detail">自己增聘人手、開新店、</text><text x="272" y="535" text-anchor="middle" class="detail">添置設備、增加產能。</text><text x="272" y="600" text-anchor="middle" class="detail">沒有與其他廠商合併。</text>
+  <rect x="545" y="425" width="560" height="260" fill="#eef7f6" class="box"/><text x="825" y="465" text-anchor="middle" class="boxheading">外部擴張（結合）</text><text x="825" y="503" text-anchor="middle" class="detail">與其他廠商合併或收購；先問兩者在供應鏈的位置。</text>
+  <text x="600" y="552" class="detail">水平結合：同一生產階段／同類產品</text><text x="600" y="588" class="detail">垂直結合：不同生產階段（向前或向後）</text><text x="600" y="624" class="detail">混合結合：不同行業、沒有直接供應鏈關係</text>
+  <text x="600" y="784" text-anchor="middle" class="detail">判斷捷徑：同一階段＝水平；上游／下游＝垂直；無關行業＝混合。</text>
+</svg>

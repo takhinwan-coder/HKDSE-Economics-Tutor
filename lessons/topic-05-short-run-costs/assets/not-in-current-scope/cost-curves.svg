@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title description">
+  <title id="title">短期成本曲線</title>
+  <desc id="description">左圖顯示總固定成本、總變動成本和總成本；右圖顯示平均固定成本、平均變動成本、平均成本和邊際成本。</desc>
+  <style>
+    .heading { fill:#15324b; font:bold 28px 'Microsoft JhengHei',sans-serif; }
+    .label { fill:#15324b; font:bold 19px 'Microsoft JhengHei',sans-serif; }
+    .detail { fill:#243247; font:17px 'Microsoft JhengHei',sans-serif; }
+  </style>
+  <rect width="1200" height="700" fill="#fff"/>
+  <text x="600" y="45" text-anchor="middle" class="heading">短期成本：由總成本到平均及邊際成本</text>
+  <line x1="100" y1="570" x2="545" y2="570" stroke="#243247" stroke-width="3"/><line x1="100" y1="570" x2="100" y2="100" stroke="#243247" stroke-width="3"/>
+  <text x="545" y="603" text-anchor="end" class="label">產量（Q）</text><text x="38" y="340" transform="rotate(-90 38 340)" class="label">總成本（$）</text>
+  <path d="M105 450 H535" fill="none" stroke="#5e8da6" stroke-width="5"/><text x="455" y="430" class="label" fill="#5e8da6">TFC</text>
+  <path d="M105 565 C205 550 320 485 400 365 C465 270 505 180 535 105" fill="none" stroke="#e68745" stroke-width="6"/><text x="475" y="155" class="label" fill="#e68745">TVC</text>
+  <path d="M105 450 C205 435 320 370 400 250 C465 155 505 105 535 70" fill="none" stroke="#168c8c" stroke-width="6"/><text x="465" y="95" class="label" fill="#168c8c">TC</text>
+  <line x1="690" y1="570" x2="1140" y2="570" stroke="#243247" stroke-width="3"/><line x1="690" y1="570" x2="690" y2="100" stroke="#243247" stroke-width="3"/>
+  <text x="1140" y="603" text-anchor="end" class="label">產量（Q）</text><text x="628" y="340" transform="rotate(-90 628 340)" class="label">每單位成本（$）</text>
+  <path d="M695 150 C770 260 875 390 1125 520" fill="none" stroke="#5e8da6" stroke-width="6"/><text x="735" y="180" class="label" fill="#5e8da6">AFC</text>
+  <path d="M695 420 C765 520 855 500 930 420 C1010 335 1070 330 1125 395" fill="none" stroke="#e68745" stroke-width="6"/><text x="1048" y="360" class="label" fill="#e68745">AVC</text>
+  <path d="M695 270 C790 430 875 465 955 405 C1035 345 1090 350 1125 410" fill="none" stroke="#168c8c" stroke-width="6"/><text x="870" y="470" class="label" fill="#168c8c">AC</text>
+  <path d="M695 490 C760 525 810 470 850 390 C895 295 950 275 1015 320 C1075 365 1100 425 1125 490" fill="none" stroke="#7b5ea7" stroke-width="6"/><text x="790" y="530" class="label" fill="#7b5ea7">MC</text>
+  <circle cx="965" cy="400" r="7" fill="#7b5ea7"/><circle cx="965" cy="400" r="7" fill="#168c8c"/>
+  <text x="985" y="445" class="detail">MC 穿過 AC 最低點</text>
+  <rect x="135" y="635" width="930" height="42" rx="10" fill="#eef7f6" stroke="#168c8c" stroke-width="2"/>
+  <text x="600" y="663" text-anchor="middle" class="detail">重點：TFC 不隨產量改變；MC 低於 AC 時拉低 AC，MC 高於 AC 時拉高 AC。</text>
+</svg>

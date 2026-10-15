@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title description">
+  <title id="title">投入、生產過程與產出</title>
+  <desc id="description">生產要素投入生產過程，產生貨物或服務。</desc>
+  <style>
+    .heading { fill: #15324b; font: bold 30px 'Microsoft JhengHei', sans-serif; }
+    .label { fill: #15324b; font: bold 25px 'Microsoft JhengHei', sans-serif; }
+    .detail { fill: #243247; font: 21px 'Microsoft JhengHei', sans-serif; }
+    .box { stroke: #168c8c; stroke-width: 3; rx: 18; }
+  </style>
+  <rect width="1200" height="420" fill="#ffffff"/>
+  <text x="600" y="55" text-anchor="middle" class="heading">廠商如何把投入變成產出？</text>
+  <rect x="45" y="115" width="310" height="210" fill="#eef7f6" class="box"/>
+  <text x="200" y="165" text-anchor="middle" class="label">投入（生產要素）</text>
+  <text x="200" y="210" text-anchor="middle" class="detail">勞力、土地</text>
+  <text x="200" y="248" text-anchor="middle" class="detail">資本、企業家才能</text>
+  <path d="M385 220 H495" stroke="#168c8c" stroke-width="7" fill="none"/>
+  <path d="M495 220 L470 202 M495 220 L470 238" stroke="#168c8c" stroke-width="7" fill="none"/>
+  <rect x="510" y="115" width="235" height="210" fill="#f2f6f8" class="box"/>
+  <text x="627" y="165" text-anchor="middle" class="label">生產過程</text>
+  <text x="627" y="218" text-anchor="middle" class="detail">調配、製作</text>
+  <text x="627" y="256" text-anchor="middle" class="detail">服務</text>
+  <path d="M775 220 H885" stroke="#168c8c" stroke-width="7" fill="none"/>
+  <path d="M885 220 L860 202 M885 220 L860 238" stroke="#168c8c" stroke-width="7" fill="none"/>
+  <rect x="900" y="115" width="255" height="210" fill="#eef7f6" class="box"/>
+  <text x="1027" y="165" text-anchor="middle" class="label">產出</text>
+  <text x="1027" y="218" text-anchor="middle" class="detail">貨物或服務</text>
+  <text x="1027" y="256" text-anchor="middle" class="detail">例如：一杯飲品</text>
+  <text x="600" y="380" text-anchor="middle" class="detail">分類時看資源在生產中的作用，而不只看它的名稱。</text>
+</svg>

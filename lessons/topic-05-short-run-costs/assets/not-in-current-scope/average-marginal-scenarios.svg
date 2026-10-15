@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title description">
+  <title id="title">平均成本和邊際成本的三種情況</title>
+  <desc id="description">三個情況說明邊際成本低於平均成本、等於平均成本及高於平均成本時，平均成本如何改變。</desc>
+  <style>
+    .heading { fill:#15324b; font:bold 29px 'Microsoft JhengHei',sans-serif; }
+    .panel { fill:#15324b; font:bold 21px 'Microsoft JhengHei',sans-serif; }
+    .detail { fill:#243247; font:17px 'Microsoft JhengHei',sans-serif; }
+    .answer { fill:#167979; font:bold 18px 'Microsoft JhengHei',sans-serif; }
+    .axis { stroke:#243247; stroke-width:2.5; }
+  </style>
+  <rect width="1200" height="620" fill="#fff"/>
+  <text x="600" y="45" text-anchor="middle" class="heading">看 MC 在 AC 的哪一邊，判斷 AC 的變化</text>
+  <rect x="25" y="78" width="365" height="450" rx="15" fill="#f2f6f8" stroke="#cbd6df" stroke-width="2"/>
+  <text x="48" y="115" class="panel">情況 1：MC &lt; AC</text>
+  <line x1="80" y1="385" x2="340" y2="385" class="axis"/><line x1="80" y1="385" x2="80" y2="165" class="axis"/>
+  <path d="M88 238 C170 330 245 340 330 275" fill="none" stroke="#168c8c" stroke-width="6"/>
+  <path d="M88 360 C145 400 185 370 220 305 C252 246 295 245 330 295" fill="none" stroke="#7b5ea7" stroke-width="6"/>
+  <text x="270" y="258" fill="#168c8c" class="detail">AC</text><text x="145" y="420" fill="#7b5ea7" class="detail">MC</text>
+  <text x="48" y="450" class="answer">MC 較低，會把 AC 拉低。</text><text x="48" y="485" class="answer">所以 AC 正在下降。</text>
+  <rect x="418" y="78" width="365" height="450" rx="15" fill="#f2f6f8" stroke="#cbd6df" stroke-width="2"/>
+  <text x="441" y="115" class="panel">情況 2：MC = AC</text>
+  <line x1="473" y1="385" x2="733" y2="385" class="axis"/><line x1="473" y1="385" x2="473" y2="165" class="axis"/>
+  <path d="M481 230 C560 330 640 335 723 275" fill="none" stroke="#168c8c" stroke-width="6"/>
+  <path d="M481 360 C540 400 580 380 615 320 C650 265 690 250 723 294" fill="none" stroke="#7b5ea7" stroke-width="6"/>
+  <circle cx="650" cy="306" r="7" fill="#e68745"/><text x="661" y="295" class="detail">交點</text>
+  <text x="441" y="450" class="answer">MC = AC；AC 在最低點。</text><text x="441" y="485" class="answer">MC 穿過 AC 的最低點。</text>
+  <rect x="810" y="78" width="365" height="450" rx="15" fill="#f2f6f8" stroke="#cbd6df" stroke-width="2"/>
+  <text x="833" y="115" class="panel">情況 3：MC &gt; AC</text>
+  <line x1="865" y1="385" x2="1125" y2="385" class="axis"/><line x1="865" y1="385" x2="865" y2="165" class="axis"/>
+  <path d="M873 230 C950 330 1025 340 1115 275" fill="none" stroke="#168c8c" stroke-width="6"/>
+  <path d="M873 360 C930 400 975 380 1010 320 C1050 250 1085 215 1115 200" fill="none" stroke="#7b5ea7" stroke-width="6"/>
+  <text x="1040" y="265" fill="#7b5ea7" class="detail">MC</text><text x="1062" y="258" fill="#168c8c" class="detail">AC</text>
+  <text x="833" y="450" class="answer">MC 較高，會把 AC 拉高。</text><text x="833" y="485" class="answer">所以 AC 正在上升。</text>
+  <rect x="155" y="550" width="890" height="42" rx="10" fill="#eef7f6" stroke="#168c8c" stroke-width="2"/>
+  <text x="600" y="578" text-anchor="middle" class="detail">像平均分：新加入的數值低於平均會拉低平均；高於平均會拉高平均。</text>
+</svg>

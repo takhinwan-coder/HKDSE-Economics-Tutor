@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title description">
+  <title id="title">總產量、平均產量和邊際產量曲線</title>
+  <desc id="description">左圖顯示總產量先以遞增速度上升，後以遞減速度上升；右圖顯示平均產量和邊際產量，邊際產量穿過平均產量最高點。</desc>
+  <style>
+    .heading { fill:#15324b; font:bold 28px 'Microsoft JhengHei',sans-serif; }
+    .label { fill:#15324b; font:bold 19px 'Microsoft JhengHei',sans-serif; }
+    .detail { fill:#243247; font:17px 'Microsoft JhengHei',sans-serif; }
+  </style>
+  <rect width="1200" height="700" fill="#fff"/>
+  <text x="600" y="45" text-anchor="middle" class="heading">短期生產：三條曲線之間的關係</text>
+  <line x1="100" y1="570" x2="545" y2="570" stroke="#243247" stroke-width="3"/><line x1="100" y1="570" x2="100" y2="100" stroke="#243247" stroke-width="3"/>
+  <text x="545" y="603" text-anchor="end" class="label">可變投入（勞工）</text><text x="38" y="340" transform="rotate(-90 38 340)" class="label">總產量（TP）</text>
+  <path d="M105 565 C165 530 220 420 285 275 C345 145 410 120 465 155 C500 180 518 225 535 290" fill="none" stroke="#168c8c" stroke-width="6"/>
+  <circle cx="305" cy="240" r="8" fill="#168c8c"/><text x="312" y="220" class="detail">轉折點：TP 開始以遞減速度上升</text>
+  <text x="435" y="125" class="label">總產量（TP）</text>
+  <line x1="690" y1="570" x2="1140" y2="570" stroke="#243247" stroke-width="3"/><line x1="690" y1="570" x2="690" y2="100" stroke="#243247" stroke-width="3"/>
+  <text x="1140" y="603" text-anchor="end" class="label">可變投入（勞工）</text><text x="628" y="340" transform="rotate(-90 628 340)" class="label">每單位勞工的產量</text>
+  <path d="M695 555 C755 440 820 270 900 205 C965 155 1020 185 1075 300 C1095 345 1112 410 1125 470" fill="none" stroke="#5e8da6" stroke-width="6"/>
+  <path d="M695 550 C775 445 850 330 930 275 C985 238 1040 240 1125 280" fill="none" stroke="#e68745" stroke-width="6"/>
+  <line x1="965" y1="165" x2="965" y2="570" stroke="#8b9aaa" stroke-width="2" stroke-dasharray="7 6"/>
+  <circle cx="965" cy="240" r="8" fill="#e68745"/>
+  <text x="1027" y="210" class="label" fill="#5e8da6">MP</text><text x="1070" y="270" class="label" fill="#e68745">AP</text>
+  <text x="970" y="145" text-anchor="middle" class="detail">MP = AP 時，AP 最高</text>
+  <rect x="115" y="635" width="970" height="42" rx="10" fill="#eef7f6" stroke="#168c8c" stroke-width="2"/>
+  <text x="600" y="663" text-anchor="middle" class="detail">重點：MP 上升／下降反映 TP 的斜率；MP 在 AP 之上時會拉高 AP，在 AP 之下時會拉低 AP。</text>
+</svg>
