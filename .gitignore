@@ -4,6 +4,10 @@ Desktop.ini
 .DS_Store
 .vscode/
 
+# Python bytecode
+__pycache__/
+*.py[cod]
+
 # Temporary and backup files
 *.tmp
 *.bak

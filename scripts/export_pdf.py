@@ -26,34 +26,37 @@ def find_browser() -> str | None:
     return None
 
 
-def warn_if_cjk_font_is_missing() -> None:
+def has_cjk_text(markdown: str) -> bool:
+    return any(
+        "\u3400" <= character <= "\u9fff"
+        or "\uf900" <= character <= "\ufaff"
+        for character in markdown
+    )
+
+
+def check_cjk_font(markdown: str) -> bool:
+    if not has_cjk_text(markdown):
+        return True
     font_matcher = shutil.which("fc-match")
     if not font_matcher:
-        return
+        return True
     result = subprocess.run(
-        [font_matcher, "-f", "%{family}", ":lang=zh"],
+        [font_matcher, "-f", "%{lang}", ":lang=zh"],
         check=False,
         capture_output=True,
         text=True,
     )
-    family = result.stdout.strip().lower()
-    known_cjk_families = (
-        "noto",
-        "source han",
-        "wenquanyi",
-        "microsoft jhenghei",
-        "mingliu",
-        "pingfang",
-        "ar pl",
-    )
-    if result.returncode == 0 and family and not any(
-        name in family for name in known_cjk_families
+    languages = result.stdout.strip().lower().split("|")
+    if result.returncode == 0 and not any(
+        language.startswith("zh") for language in languages
     ):
         print(
-            "Warning: no common Chinese font was detected; install a Traditional "
-            "Chinese font (for example Noto Sans CJK TC) before sharing this PDF.",
+            "No common Chinese font was detected. Install a Traditional Chinese "
+            "font (for example Noto Sans CJK TC) before exporting this handout.",
             file=sys.stderr,
         )
+        return False
+    return True
 
 
 def render_html(source: Path, markdown: str, stylesheet: str) -> str:
@@ -116,10 +119,11 @@ def main() -> int:
     if args.browser and not Path(args.browser).is_file() and not shutil.which(args.browser):
         parser.error(f"Browser executable not found: {args.browser}")
 
-    warn_if_cjk_font_is_missing()
-
     stylesheet_path = Path(__file__).with_name("print.css")
     markdown = source.read_text(encoding="utf-8")
+    if not check_cjk_font(markdown):
+        return 1
+
     document = render_html(
         source,
         markdown,

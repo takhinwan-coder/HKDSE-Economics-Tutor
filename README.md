@@ -50,7 +50,7 @@
 ## PDF 與版本管理
 
 - Markdown 是可修改、可追蹤的主要來源；PDF 是交給學生的發佈版本。
-- 安裝 Python 依賴：`python -m pip install -r requirements.txt`；另需安裝 Chromium 或 Google Chrome。Linux 如缺少繁體中文字型，請安裝 Noto Sans CJK TC 或其他繁體中文字型。若 Linux 限制 Chromium sandbox，匯出器會顯示警告並只為該次本機 Markdown 匯出重試。
+- 安裝 Python 依賴：`python -m pip install -r requirements.txt`；另需安裝 Chromium 或 Google Chrome。Linux 匯出繁體中文講義前須安裝 Noto Sans CJK TC 等繁體中文字型；若偵測不到字型，匯出器會停止，避免產生缺字 PDF。若 Linux 限制 Chromium sandbox，匯出器會顯示警告並只為該次本機 Markdown 匯出重試。
 - 執行 `python scripts/export_pdf.py lessons/topic-05-short-run-production/student-pack.md`，會在同一資料夾產生 `student-pack.pdf`。其他講義可替換為其 Markdown 路徑；亦可用 `--output` 指定 PDF 路徑。
 - 匯出器使用 A4 繁體中文列印樣式 [`scripts/print.css`](./scripts/print.css)，並載入講義旁的相對圖片（例如 SVG）。
 - 學生 PDF 只由 `student-pack.md` 匯出；不可把 tutor guide 或答案提示併入。導師筆記如有需要，可另外指定其 Markdown 檔案匯出。
