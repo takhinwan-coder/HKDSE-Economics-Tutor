@@ -15,12 +15,12 @@
   <text x="435" y="125" class="label">總產量（TP）</text>
   <line x1="690" y1="570" x2="1140" y2="570" stroke="#243247" stroke-width="3"/><line x1="690" y1="570" x2="690" y2="100" stroke="#243247" stroke-width="3"/>
   <text x="1140" y="603" text-anchor="end" class="label">可變投入（勞工）</text><text x="628" y="340" transform="rotate(-90 628 340)" class="label">每單位勞工的產量</text>
-  <path d="M695 555 C755 440 820 270 900 205 C965 155 1020 185 1075 300 C1095 345 1112 410 1125 470" fill="none" stroke="#5e8da6" stroke-width="6"/>
-  <path d="M695 550 C775 445 850 330 930 275 C985 238 1040 240 1125 280" fill="none" stroke="#e68745" stroke-width="6"/>
+  <path d="M695 550 C765 435 835 285 900 230 C930 210 950 235 965 240 C1015 250 1070 340 1125 455" fill="none" stroke="#5e8da6" stroke-width="6"/>
+  <path d="M695 555 C760 455 830 330 900 270 C930 240 950 240 965 240 C1010 240 1060 290 1125 350" fill="none" stroke="#e68745" stroke-width="6"/>
   <line x1="965" y1="165" x2="965" y2="570" stroke="#8b9aaa" stroke-width="2" stroke-dasharray="7 6"/>
   <circle cx="965" cy="240" r="8" fill="#e68745"/>
-  <text x="1027" y="210" class="label" fill="#5e8da6">MP</text><text x="1070" y="270" class="label" fill="#e68745">AP</text>
-  <text x="970" y="145" text-anchor="middle" class="detail">MP = AP 時，AP 最高</text>
+  <text x="1027" y="320" class="label" fill="#5e8da6">MP</text><text x="1070" y="300" class="label" fill="#e68745">AP</text>
+  <text x="965" y="145" text-anchor="middle" class="detail">MP = AP，AP 最高</text>
   <rect x="115" y="635" width="970" height="42" rx="10" fill="#eef7f6" stroke="#168c8c" stroke-width="2"/>
   <text x="600" y="663" text-anchor="middle" class="detail">重點：MP 上升／下降反映 TP 的斜率；MP 在 AP 之上時會拉高 AP，在 AP 之下時會拉低 AP。</text>
 </svg>
