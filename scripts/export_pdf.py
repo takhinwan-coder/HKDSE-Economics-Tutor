@@ -26,6 +26,36 @@ def find_browser() -> str | None:
     return None
 
 
+def warn_if_cjk_font_is_missing() -> None:
+    font_matcher = shutil.which("fc-match")
+    if not font_matcher:
+        return
+    result = subprocess.run(
+        [font_matcher, "-f", "%{family}", ":lang=zh"],
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    family = result.stdout.strip().lower()
+    known_cjk_families = (
+        "noto",
+        "source han",
+        "wenquanyi",
+        "microsoft jhenghei",
+        "mingliu",
+        "pingfang",
+        "ar pl",
+    )
+    if result.returncode == 0 and family and not any(
+        name in family for name in known_cjk_families
+    ):
+        print(
+            "Warning: no common Chinese font was detected; install a Traditional "
+            "Chinese font (for example Noto Sans CJK TC) before sharing this PDF.",
+            file=sys.stderr,
+        )
+
+
 def render_html(source: Path, markdown: str, stylesheet: str) -> str:
     renderer = MarkdownIt("default").enable(["table", "strikethrough"])
     content = renderer.render(markdown)
@@ -74,6 +104,8 @@ def main() -> int:
     )
     if output == source:
         parser.error("PDF output must not overwrite the Markdown source")
+    if output.suffix.lower() != ".pdf":
+        parser.error("Output file must have a .pdf extension")
     output.parent.mkdir(parents=True, exist_ok=True)
 
     browser = args.browser or find_browser()
@@ -84,6 +116,8 @@ def main() -> int:
     if args.browser and not Path(args.browser).is_file() and not shutil.which(args.browser):
         parser.error(f"Browser executable not found: {args.browser}")
 
+    warn_if_cjk_font_is_missing()
+
     stylesheet_path = Path(__file__).with_name("print.css")
     markdown = source.read_text(encoding="utf-8")
     document = render_html(
@@ -93,6 +127,7 @@ def main() -> int:
     )
 
     temporary_html: Path | None = None
+    temporary_pdf: Path | None = None
     try:
         with tempfile.NamedTemporaryFile(
             mode="w",
@@ -105,34 +140,62 @@ def main() -> int:
             html_file.write(document)
             temporary_html = Path(html_file.name)
 
+        with tempfile.NamedTemporaryFile(
+            suffix=".pdf",
+            prefix=".lesson-export-",
+            dir=output.parent,
+            delete=False,
+        ) as pdf_file:
+            temporary_pdf = Path(pdf_file.name)
+
+        command = [
+            browser,
+            "--headless",
+            "--disable-gpu",
+            "--no-first-run",
+            "--no-pdf-header-footer",
+            f"--print-to-pdf={temporary_pdf}",
+            temporary_html.as_uri(),
+        ]
         result = subprocess.run(
-            [
-                browser,
-                "--headless",
-                "--disable-gpu",
-                "--no-sandbox",
-                "--no-first-run",
-                "--no-pdf-header-footer",
-                f"--print-to-pdf={output}",
-                temporary_html.as_uri(),
-            ],
+            command,
             check=False,
             capture_output=True,
             text=True,
             timeout=120,
         )
+        if result.returncode != 0 and "No usable sandbox" in result.stderr:
+            print(
+                "Warning: Chromium sandbox is unavailable in this environment; "
+                "retrying without it for this local Markdown export.",
+                file=sys.stderr,
+            )
+            result = subprocess.run(
+                [browser, "--no-sandbox", *command[1:]],
+                check=False,
+                capture_output=True,
+                text=True,
+                timeout=120,
+            )
         if result.returncode != 0:
-            detail = result.stderr.strip() or result.stdout.strip()
+            detail = (result.stderr.strip() or result.stdout.strip())[-2000:]
             raise RuntimeError(detail or f"Browser exited with {result.returncode}")
-        if not output.is_file() or output.stat().st_size == 0:
+        if (
+            not temporary_pdf.is_file()
+            or temporary_pdf.stat().st_size == 0
+            or not temporary_pdf.read_bytes().startswith(b"%PDF-")
+        ):
             raise RuntimeError("The browser did not create a PDF.")
+        temporary_pdf.chmod(0o644)
+        temporary_pdf.replace(output)
     except (OSError, subprocess.SubprocessError, RuntimeError) as error:
-        output.unlink(missing_ok=True)
         print(f"PDF export failed: {error}", file=sys.stderr)
         return 1
     finally:
         if temporary_html:
             temporary_html.unlink(missing_ok=True)
+        if temporary_pdf:
+            temporary_pdf.unlink(missing_ok=True)
 
     print(f"PDF exported: {output}")
     return 0
