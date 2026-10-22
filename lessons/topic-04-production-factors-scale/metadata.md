@@ -10,7 +10,7 @@
 - **教材狀態：**待導師檢查
 - **學校來源：**`syllabus/Econ_C&A_Guide_C_with_updates_in_2025.pdf`，必修部分 B Topic 4；學生筆記檔案見 `syllabus/student-notes/`。校內筆記頁碼及特定用語待導師對照原 PDF 核實
 - **歷屆試題：**`past-papers/Topic 4 生產要素和生產級別.pdf` 僅作課題定位；未核實年份、卷別、題號或頁碼，練習均為自編
-- **學生版 PDF：**尚未匯出；完成導師檢查後由本課最新 Markdown 匯出
+- **學生版 PDF：**`student-pack.pdf`；由工作區自動生成及更新，來源為 `student-pack.md`
 - **圖表／工具：**投入—生產過程—產出圖、勞動生產力比較圖；分工流程圖；可選用 Desmos／試算表
 - **相關常見錯誤：**把資本等同金錢；把總產量當作勞動生產力；只寫「分工提高效率」而欠缺因果機制
 
@@ -27,4 +27,4 @@
 
 - 學生講義：[`student-pack.md`](./student-pack.md)
 - 導師筆記：[`tutor-guide.md`](./tutor-guide.md)
-- 答案：[`solutions.md`](./solutions.md)
+- 練習答案及評分提示：見 [`tutor-guide.md`](./tutor-guide.md)

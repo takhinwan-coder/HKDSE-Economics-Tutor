@@ -9,7 +9,7 @@
 - **教材狀態：**草稿，待按前課掌握程度檢查
 - **學校來源：**`syllabus/Econ_C&A_Guide_C_with_updates_in_2025.pdf` 必修部分 B Topic 5；遵從 2025 更新指引關於不需涉及成本曲線一般關係的註釋。具體頁碼待核實
 - **歷屆試題：**`past-papers/Topic 5 短期與長期生產及成本.pdf` 作課題定位；未引用未核實年份、卷別、題號或頁碼，練習為自編
-- **學生版 PDF：**尚未按本課題命名匯出；匯出前檢查內嵌 SVG 成本圖及答案隔離
+- **學生版 PDF：**`student-pack.pdf`；由工作區自動生成及更新，來源為 `student-pack.md`
 
 ## 範圍
 
@@ -19,4 +19,4 @@
 
 - 學生講義：[`student-pack.md`](./student-pack.md)
 - 導師筆記：[`tutor-guide.md`](./tutor-guide.md)
-- 答案：[`solutions.md`](./solutions.md)
+- 練習答案及評分提示：見 [`tutor-guide.md`](./tutor-guide.md)

@@ -9,7 +9,7 @@
 - **教材狀態：**草稿，待依更新版 syllabus 核對 LRAC 是否仍列作概念範圍
 - **學校來源：**`syllabus/Econ_C&A_Guide_C_with_updates_in_2025.pdf` 必修部分 B Topics 5–6；導師提供 2025 更新指引註釋，LRAC 限概念簡述。具體頁碼待核實
 - **歷屆試題：**`past-papers/Topic 5 短期與長期生產及成本.pdf`、`past-papers/Topic 6 廠商擁有權、握張及結合.pdf` 作課題定位；未引用未核實年份、卷別、題號或頁碼
-- **學生版 PDF：**尚未匯出；最新 Markdown 已移除 LRAC 圖形及曲線關係操練，完成導師檢查後再匯出
+- **學生版 PDF：**`student-pack.pdf`；由工作區自動生成及更新，來源為 `student-pack.md`
 
 ## 範圍決定
 
@@ -19,4 +19,4 @@ LRAC／規模經濟只保留簡短文字概念，不教曲線繪畫、曲線的�
 
 - 學生講義：[`student-pack.md`](./student-pack.md)
 - 導師筆記：[`tutor-guide.md`](./tutor-guide.md)
-- 答案：[`solutions.md`](./solutions.md)
+- 練習答案及評分提示：見 [`tutor-guide.md`](./tutor-guide.md)

@@ -11,7 +11,7 @@
 - **學校來源：** `syllabus/Econ_C&A_Guide_C_with_updates_in_2025.pdf`，PDF 第 1 頁（文件頁碼 7），2.2.1 必修部分 A
 - **學生校內筆記：** 已存放 Ch.01–04；本教材未按筆記內容更新，留待 Topic 1 備課時核對
 - **歷屆試題：** `past-papers/Topic 1 基本經濟概念.pdf`（21 頁）。已確認課題檔存在，但掃描偏淡；本課不引用未核實的真題年份、卷別、題號或頁碼。練習為自編 HKDSE 風格題目
-- **學生版 PDF：** 尚未匯出；以 `student-pack.md` 為主檔
+- **學生版 PDF：**`student-pack.pdf`；由工作區自動生成及更新，來源為 `student-pack.md`
 - **相關常見錯誤：** 首課待觀察；留意把稀少性等同罕有、把機會成本等同價格或所有被放棄選擇總和
 
 ## 範圍決定
@@ -22,4 +22,4 @@
 
 - 學生講義：[`student-pack.md`](./student-pack.md)
 - 導師筆記：[`tutor-guide.md`](./tutor-guide.md)
-- 答案：[`solutions.md`](./solutions.md)
+- 練習答案及評分提示：見 [`tutor-guide.md`](./tutor-guide.md)

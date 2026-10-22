@@ -3,6 +3,8 @@ Thumbs.db
 Desktop.ini
 .DS_Store
 .vscode/
+!.vscode/
+!.vscode/tasks.json
 
 # Temporary and backup files
 *.tmp

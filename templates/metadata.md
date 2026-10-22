@@ -10,11 +10,11 @@
 - **教材狀態：**未開始／草稿／待導師檢查／可授課／已完成
 - **學校來源：**［檔名、版本、頁碼/章節］
 - **歷屆試題：**［試題索引 ID 或年份、卷別、題號；沒有則寫「未使用」］
-- **學生版 PDF：**［檔名/版本；尚未匯出則留空］
+- **學生版 PDF：**`student-pack.pdf`；由工作區自動生成／更新
 - **相關常見錯誤：**［連結或簡述］
 
 ## 本課材料
 
 - 學生講義：[`student-pack.md`](./student-pack.md)
 - 導師筆記：[`tutor-guide.md`](./tutor-guide.md)
-- 答案：[`solutions.md`](./solutions.md)
+- 練習答案及評分提示：見 [`tutor-guide.md`](./tutor-guide.md)

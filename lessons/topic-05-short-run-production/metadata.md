@@ -9,10 +9,10 @@
 - **教材狀態：**草稿，待按首課掌握程度檢查
 - **學校來源：**`syllabus/Econ_C&A_Guide_C_with_updates_in_2025.pdf` 必修部分 B Topic 5；學生筆記 Ch.03–04 可作前置脈絡，校內頁碼/術語待核實
 - **歷屆試題：**`past-papers/Topic 5 短期與長期生產及成本.pdf` 作課題定位；未引用未核實年份、卷別、題號或頁碼，題目為自編
-- **學生版 PDF：**尚未按本課題命名匯出；匯出前檢查內嵌 SVG 曲線圖及答案隔離
+- **學生版 PDF：**`student-pack.pdf`；由 VS Code 開啟工作區時的自動監看工作生成及更新，來源為 `student-pack.md`
 
 ## 本課材料
 
 - 學生講義：[`student-pack.md`](./student-pack.md)
 - 導師筆記：[`tutor-guide.md`](./tutor-guide.md)
-- 答案：[`solutions.md`](./solutions.md)
+- 練習答案及評分提示已附於 [`tutor-guide.md`](./tutor-guide.md)

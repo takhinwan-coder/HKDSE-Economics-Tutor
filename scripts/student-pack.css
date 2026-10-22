@@ -1,0 +1,118 @@
+@page {
+  size: A4;
+  margin: 18mm 16mm 20mm;
+
+  @bottom-right {
+    content: counter(page);
+    color: #667788;
+    font-size: 9pt;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #243247;
+  font-family: "Arial Unicode MS", "STHeiti", "Songti SC", sans-serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #15324b;
+  line-height: 1.25;
+  page-break-after: avoid;
+}
+
+h1 {
+  border-bottom: 2px solid #168c8c;
+  font-size: 23pt;
+  padding-bottom: 5pt;
+}
+
+h2 {
+  border-left: 4px solid #168c8c;
+  font-size: 16pt;
+  margin-top: 22pt;
+  padding-left: 8pt;
+}
+
+h3 {
+  font-size: 13pt;
+  margin-top: 16pt;
+}
+
+p,
+li {
+  orphans: 3;
+  widows: 3;
+}
+
+blockquote {
+  background: #eef7f6;
+  border-left: 3px solid #168c8c;
+  margin: 12pt 0;
+  padding: 6pt 10pt;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 9.5pt;
+  margin: 12pt 0;
+  page-break-inside: avoid;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #cbd6df;
+  padding: 5pt 7pt;
+  vertical-align: top;
+}
+
+td:empty {
+  height: 30pt;
+}
+
+th {
+  background: #eef3f6;
+  color: #15324b;
+}
+
+tr:nth-child(even) td {
+  background: #f8fafb;
+}
+
+pre,
+code {
+  font-family: "Menlo", "Arial Unicode MS", monospace;
+  font-size: 9pt;
+}
+
+pre {
+  background: #f2f6f8;
+  padding: 8pt;
+  white-space: pre-wrap;
+}
+
+img,
+svg {
+  display: block;
+  height: auto;
+  margin: 14pt auto;
+  max-width: 100%;
+  page-break-inside: avoid;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #cbd6df;
+  margin: 18pt 0;
+}
