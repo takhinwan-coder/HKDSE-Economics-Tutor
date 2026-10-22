@@ -33,7 +33,7 @@
 
 建議每次只處理**一課**的工作，不要把整份 syllabus 和所有歷屆試題一次載入對話；repository 的索引負責定位相關來源。也建議每課開一個新的對話，沿用這個工作區並按需讀取 course map、本課材料和相關 syllabus/試題即可；不用重貼整套教學規則或上一課的完整對話。新對話可用以下開場：
 
-> 請在目前 HKDSE Economics Tutor repository 準備「課題名稱」。今課課題：……；學生目前進度/先備知識：……；請只查閱相關 syllabus 部分和 `past-papers/index.md` 中對應的試題。建立或更新該課的 student pack、tutor guide、solutions 和 metadata。校內進度尚未確認的地方請標示，不要猜測。
+> 請在目前 HKDSE Economics Tutor repository 準備「課題名稱」。今課課題：……；學生目前進度/先備知識：……；請只查閱相關 syllabus 部分和 `past-papers/index.md` 中對應的試題。建立或更新該課的 student pack、tutor guide 和 metadata。校內進度尚未確認的地方請標示，不要猜測。
 
 ## 每課教材
 
