@@ -9,7 +9,7 @@
 | [第 1 課：Topic 4 生產要素和生產級別](./lessons/topic-04-production-factors-scale/metadata.md) | 2026-10-16（預計） | 生產、分工與專門化；生產要素；勞動生產力 | 學生校內筆記 Ch.03「生產和分工」及 Ch.04「生產要素」；兩章均納入首課 | 待導師檢查 | 課前核對校內用語及更新後的學生 PDF；首課後確認理解情況 |
 | [第 2 課：Topic 5 短期生產](./lessons/topic-05-short-run-production/metadata.md) |  | 短期／長期、TP、AP、MP、遞減邊際報酬 | 依 Topic 5；按第 1 課實際掌握程度銜接 | 草稿 | 確認學校是否已教相關圖表和術語 |
 | [第 3 課：Topic 5 短期成本](./lessons/topic-05-short-run-costs/metadata.md) |  | 固定／變動成本、平均及邊際成本、短期成本表 | 依 Topic 5；遵從 2025 更新指引的「無須涉及」註釋，不教已排除的曲線一般關係 | 草稿 | 對照更新版指引核實本課必教成本概念 |
-| [第 4 課：Topic 6 廠商擁有權、擴張及結合](./lessons/topic-06-firm-ownership-expansion-merger/metadata.md) |  | 獨資、合夥、有限公司；內部擴張及水平／垂直／混合結合；只簡述 LRAC 概念 | LRAC 不作曲線繪畫、曲線關係或專項操練；依導師確認的概念簡述深度 | 草稿 | 核對更新版 syllabus 是否仍列明 LRAC/規模經濟概念 |
+| [第 4 課：Topic 6 廠商擁有權、擴張及結合](./lessons/topic-06-firm-ownership-expansion-merger/metadata.md) |  | 獨資、合夥、有限公司；內部擴張及水平／垂直／混合結合；配合 LRAC 簡述規模經濟 | 規模經濟屬長期成本概念，安排在 Topic 5 短期生產與成本之後；不作曲線繪畫或曲線關係操練 | 草稿 | 導師確認規模經濟的教學深度並核對更新版 syllabus |
 
 ## 其他已有教材（未排入本輪四課）
 
