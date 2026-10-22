@@ -1,0 +1,119 @@
+@page {
+  size: A4;
+  margin: 18mm 17mm 19mm;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #243247;
+  font-family: "Noto Sans CJK TC", "Noto Sans TC", "Microsoft JhengHei",
+    "PingFang TC", sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.55;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #15324b;
+  line-height: 1.3;
+  break-after: avoid-page;
+}
+
+h1 {
+  border-bottom: 2px solid #168c8c;
+  font-size: 23pt;
+  padding-bottom: 0.25em;
+}
+
+h2 {
+  border-bottom: 1px solid #d8e2e8;
+  font-size: 16pt;
+  margin-top: 1.4em;
+  padding-bottom: 0.15em;
+}
+
+h3 {
+  font-size: 12.5pt;
+  margin-top: 1.1em;
+}
+
+p,
+ul,
+ol,
+blockquote {
+  orphans: 3;
+  widows: 3;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 9pt;
+  margin: 0.8em 0 1.1em;
+  width: 100%;
+}
+
+thead {
+  display: table-header-group;
+}
+
+th,
+td {
+  border: 1px solid #b8c8d2;
+  padding: 0.35em 0.45em;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #edf4f6;
+  color: #15324b;
+}
+
+tr,
+img,
+blockquote,
+pre {
+  break-inside: avoid;
+}
+
+blockquote {
+  background: #f2f7f7;
+  border-left: 3px solid #168c8c;
+  margin: 1em 0;
+  padding: 0.25em 0.9em;
+}
+
+img {
+  display: block;
+  height: auto;
+  margin: 0.8em auto;
+  max-height: 245mm;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+pre,
+code {
+  font-family: "Noto Sans Mono CJK TC", "Cascadia Mono", monospace;
+}
+
+pre {
+  background: #f3f6f8;
+  overflow-wrap: anywhere;
+  padding: 0.7em;
+  white-space: pre-wrap;
+}
+
+a {
+  color: #176b78;
+  text-decoration: none;
+}

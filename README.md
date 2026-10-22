@@ -50,8 +50,10 @@
 ## PDF 與版本管理
 
 - Markdown 是可修改、可追蹤的主要來源；PDF 是交給學生的發佈版本。
-- 建議在 VS Code 安裝 Markdown PDF 匯出 extension（`yzane.markdown-pdf`）；本 workspace 提供 A4 繁體中文列印樣式 [`teaching-notes.css`](./.vscode/teaching-notes.css)，學生講義與導師筆記共用。
-- 開啟 `student-pack.md` 或 `tutor-guide.md`，執行 **Markdown PDF: Export (pdf)**；PDF 會輸出在同一課題資料夾。導師筆記及答案提示不應併入學生版 PDF。
+- 安裝 Python 依賴：`python -m pip install -r requirements.txt`；另需安裝 Chromium 或 Google Chrome。
+- 執行 `python scripts/export_pdf.py lessons/topic-05-short-run-production/student-pack.md`，會在同一資料夾產生 `student-pack.pdf`。其他講義可替換為其 Markdown 路徑；亦可用 `--output` 指定 PDF 路徑。
+- 匯出器使用 A4 繁體中文列印樣式 [`scripts/print.css`](./scripts/print.css)，並載入講義旁的相對圖片（例如 SVG）。
+- 學生 PDF 只由 `student-pack.md` 匯出；不可把 tutor guide 或答案提示併入。導師筆記如有需要，可另外指定其 Markdown 檔案匯出。
 - 輸出前檢查繁體中文字型、圖表標籤、換頁和頁數；若 PDF 排版不理想，先調整 Markdown，再重新輸出。
 - 可把發給學生的 PDF 放回同一課題資料夾，檔名例如 `student-pack.pdf`；不要把答案或導師筆記合併進學生 PDF。
 - Git 用來記錄 syllabus 摘要、講義和索引的每課修訂。這是本機 repository；定期備份，未決定用途前不要加入學生姓名等個人資料。
