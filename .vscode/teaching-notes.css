@@ -1,0 +1,156 @@
+@page {
+  size: A4;
+  margin: 16mm 17mm;
+}
+
+body {
+  color: #243247;
+  font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans CJK TC", sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.7;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #15324b;
+  line-height: 1.35;
+  page-break-after: avoid;
+}
+
+h1 {
+  border-bottom: 3px solid #168c8c;
+  font-size: 23pt;
+  margin: 0 0 0.45em;
+  padding-bottom: 0.28em;
+}
+
+h2 {
+  border-left: 4px solid #168c8c;
+  font-size: 15pt;
+  margin: 1.5em 0 0.55em;
+  padding-left: 0.55em;
+}
+
+h3 {
+  color: #167979;
+  font-size: 12pt;
+  margin: 1.15em 0 0.4em;
+}
+
+p,
+li {
+  orphans: 3;
+  widows: 3;
+}
+
+blockquote {
+  background: #eef7f6;
+  border-left: 4px solid #168c8c;
+  color: #234451;
+  margin: 1em 0;
+  padding: 0.55em 1em;
+}
+
+blockquote p {
+  margin: 0.25em 0;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 9.5pt;
+  margin: 1em 0 1.3em;
+  page-break-inside: auto;
+  width: 100%;
+}
+
+thead {
+  display: table-header-group;
+}
+
+th {
+  background: #15324b;
+  color: #fff;
+  font-weight: 600;
+  text-align: left;
+}
+
+th,
+td {
+  border: 1px solid #cbd6df;
+  padding: 0.45em 0.6em;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+tr:nth-child(even) td {
+  background: #f2f6f8;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #cbd6df;
+  margin: 1.6em 0;
+}
+
+strong {
+  color: #15324b;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  max-height: 235mm;
+  margin: 0.8em auto;
+  object-fit: contain;
+}
+
+pre,
+code {
+  font-family: Consolas, "Microsoft JhengHei", monospace;
+}
+
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+@media print {
+  a {
+    color: #167979;
+    text-decoration: none;
+  }
+
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  blockquote,
+  img,
+  svg,
+  tr {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  table {
+    break-inside: auto;
+  }
+
+  pre {
+    break-inside: auto;
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "markdown-pdf.styles": [
+    ".vscode/teaching-notes.css"
+  ],
+  "markdown-pdf.format": "A4",
+  "markdown-pdf.margin.top": "16mm",
+  "markdown-pdf.margin.bottom": "16mm",
+  "markdown-pdf.margin.left": "17mm",
+  "markdown-pdf.margin.right": "17mm",
+  "markdown-pdf.displayHeaderFooter": false
+}
