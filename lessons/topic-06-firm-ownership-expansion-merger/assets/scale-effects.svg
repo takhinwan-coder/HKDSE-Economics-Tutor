@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title description">
+  <title id="title">規模擴大對平均成本的兩種影響</title>
+  <desc id="description">長期增加所有投入時，專門化或大量採購可能令平均成本下降，形成規模經濟；管理與協調困難可能令平均成本上升，形成規模不經濟。</desc>
+  <style>
+    .title { fill:#15324b; font:bold 35px 'Microsoft JhengHei',sans-serif; }
+    .heading { fill:#15324b; font:bold 29px 'Microsoft JhengHei',sans-serif; }
+    .text { fill:#243247; font:24px 'Microsoft JhengHei',sans-serif; }
+    .small { fill:#45606f; font:20px 'Microsoft JhengHei',sans-serif; }
+    .panel { fill:#f2f6f8; stroke:#168c8c; stroke-width:3; rx:18; }
+    .step { fill:#fff; stroke:#b7c8d2; stroke-width:2; rx:12; }
+    .down { fill:#167979; font:bold 24px 'Microsoft JhengHei',sans-serif; }
+    .up { fill:#a64b37; font:bold 24px 'Microsoft JhengHei',sans-serif; }
+  </style>
+  <rect width="1200" height="620" fill="#fff"/>
+  <text x="600" y="48" text-anchor="middle" class="title">規模擴大：每單位平均成本可能下降，也可能上升</text>
+  <rect x="135" y="72" width="930" height="57" class="step"/>
+  <text x="600" y="108" text-anchor="middle" class="text">長期：廠商可調整所有投入，擴大生產規模</text>
+  <rect x="45" y="165" width="535" height="345" class="panel"/>
+  <text x="312" y="210" text-anchor="middle" class="heading">規模經濟</text>
+  <rect x="105" y="235" width="415" height="67" class="step"/>
+  <text x="312" y="277" text-anchor="middle" class="text">產量／營運規模擴大</text>
+  <text x="312" y="337" text-anchor="middle" class="down">↓</text>
+  <rect x="105" y="357" width="415" height="67" class="step"/>
+  <text x="312" y="399" text-anchor="middle" class="text">分工更專門／大量採購更有利</text>
+  <text x="312" y="458" text-anchor="middle" class="down">平均成本下降</text>
+  <text x="312" y="487" text-anchor="middle" class="small">每單位產出所需平均成本減少</text>
+
+  <rect x="620" y="165" width="535" height="345" class="panel"/>
+  <text x="887" y="210" text-anchor="middle" class="heading">規模不經濟</text>
+  <rect x="680" y="235" width="415" height="67" class="step"/>
+  <text x="887" y="277" text-anchor="middle" class="text">產量／營運規模繼續擴大</text>
+  <text x="887" y="337" text-anchor="middle" class="up">↓</text>
+  <rect x="680" y="357" width="415" height="67" class="step"/>
+  <text x="887" y="399" text-anchor="middle" class="text">管理、溝通及協調較困難</text>
+  <text x="887" y="458" text-anchor="middle" class="up">平均成本上升</text>
+  <text x="887" y="487" text-anchor="middle" class="small">每單位產出所需平均成本增加</text>
+
+  <rect x="110" y="536" width="980" height="55" class="step"/>
+  <text x="600" y="560" text-anchor="middle" class="small">不要只比較總成本；要計每單位平均成本。這與短期固定投入下 MP 遞減是不同概念。</text>
+  <text x="600" y="583" text-anchor="middle" class="small">本圖是因果流程，不要求繪畫或分析短期與長期成本曲線的關係。</text>
+</svg>

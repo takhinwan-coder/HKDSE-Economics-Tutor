@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="590" viewBox="0 0 1200 590" role="img" aria-labelledby="title description">
+  <title id="title">分工的三個層次</title>
+  <desc id="description">工序分工把工作拆給不同工人，職業分工由不同職業專責不同工作，地區分工則由不同地區集中生產不同產品並交換。</desc>
+  <style>
+    .title { fill:#15324b; font:bold 35px 'Microsoft JhengHei',sans-serif; }
+    .heading { fill:#15324b; font:bold 28px 'Microsoft JhengHei',sans-serif; }
+    .text { fill:#243247; font:24px 'Microsoft JhengHei',sans-serif; }
+    .small { fill:#45606f; font:20px 'Microsoft JhengHei',sans-serif; }
+    .card { fill:#f2f6f8; stroke:#168c8c; stroke-width:3; rx:18; }
+    .chip { fill:#eef7f6; stroke:#98c9c4; stroke-width:2; rx:12; }
+    .arrow { stroke:#168c8c; stroke-width:4; fill:none; marker-end:url(#arrowhead); }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#168c8c"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="590" fill="#fff"/>
+  <text x="600" y="52" text-anchor="middle" class="title">分工：可以發生在不同層次</text>
+  <rect x="35" y="92" width="355" height="415" class="card"/>
+  <text x="212" y="137" text-anchor="middle" class="heading">工序／工作分工</text>
+  <text x="212" y="175" text-anchor="middle" class="small">同一生產流程拆成專責工作</text>
+  <rect x="70" y="220" width="115" height="75" class="chip"/>
+  <text x="127" y="265" text-anchor="middle" class="text">備料</text>
+  <rect x="205" y="220" width="115" height="75" class="chip"/>
+  <text x="262" y="265" text-anchor="middle" class="text">烘焙</text>
+  <rect x="138" y="325" width="115" height="75" class="chip"/>
+  <text x="195" y="370" text-anchor="middle" class="text">包裝</text>
+  <path d="M185 258 H198" class="arrow"/>
+  <path d="M262 296 L226 322" class="arrow"/>
+  <text x="212" y="457" text-anchor="middle" class="small">不同工人專責不同步驟</text>
+
+  <rect x="423" y="92" width="355" height="415" class="card"/>
+  <text x="600" y="137" text-anchor="middle" class="heading">職業分工</text>
+  <text x="600" y="175" text-anchor="middle" class="small">不同職業專責不同類型工作</text>
+  <rect x="458" y="220" width="285" height="58" class="chip"/>
+  <text x="600" y="257" text-anchor="middle" class="text">農夫：種植農作物</text>
+  <rect x="458" y="305" width="285" height="58" class="chip"/>
+  <text x="600" y="342" text-anchor="middle" class="text">麵包師：製作麵包</text>
+  <rect x="458" y="390" width="285" height="58" class="chip"/>
+  <text x="600" y="427" text-anchor="middle" class="text">店員：零售產品</text>
+  <text x="600" y="477" text-anchor="middle" class="small">透過交易互相取得所需產品</text>
+
+  <rect x="810" y="92" width="355" height="415" class="card"/>
+  <text x="987" y="137" text-anchor="middle" class="heading">地區分工</text>
+  <text x="987" y="175" text-anchor="middle" class="small">不同地區集中生產不同產品</text>
+  <rect x="850" y="225" width="130" height="85" class="chip"/>
+  <text x="915" y="260" text-anchor="middle" class="text">甲地</text>
+  <text x="915" y="288" text-anchor="middle" class="small">農產品</text>
+  <rect x="1000" y="225" width="130" height="85" class="chip"/>
+  <text x="1065" y="260" text-anchor="middle" class="text">乙地</text>
+  <text x="1065" y="288" text-anchor="middle" class="small">漁產品</text>
+  <path d="M980 247 H997" class="arrow"/>
+  <path d="M1000 291 H983" class="arrow"/>
+  <text x="987" y="365" text-anchor="middle" class="small">兩地透過貿易交換產品</text>
+  <text x="987" y="415" text-anchor="middle" class="small">分工範圍由工作流程擴至地區</text>
+  <text x="600" y="558" text-anchor="middle" class="small">核心：專責生產某部分，再透過合作或交易取得其他所需。</text>
+</svg>

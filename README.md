@@ -28,24 +28,26 @@
 1. 指出今課要教的 1–2 個課題及學生大概進度；學生只記得口頭課題也可以，不必等到取得校內筆記才開始。
 2. 如有相關學校教材，可放在 [`syllabus/student-notes/`](./syllabus/student-notes/)；若有合適的歷屆試題，從 [試題索引](./past-papers/index.md) 選取。
 3. 只載入本課相關的 syllabus 摘錄和試題參考，按本 repository 的範本製作當課材料。
-4. Tutor 檢查內容和題目後，學生 PDF 由工作區自動生成；導師使用同時包含教案、答案及評分提示的 `tutor-guide.md`。
+4. 每課只交付兩份教學筆記：`student-pack.md` 給學生，`tutor-guide.md` 給導師並包含所有答案及評分提示。學生 PDF 由工作區自動生成；答案不可放進學生版。
 5. 課後提供學生理解情況和實際上課日期；更新 [`course-map.md`](./course-map.md) 的日期、教材狀態及一句話待跟進，並只在有可重用的匿名化錯誤時更新常見錯誤紀錄。欄位定義見 course map。
 
 建議每次只處理**一課**的工作，不要把整份 syllabus 和所有歷屆試題一次載入對話；repository 的索引負責定位相關來源。也建議每課開一個新的對話，沿用這個工作區並按需讀取 course map、本課材料和相關 syllabus/試題即可；不用重貼整套教學規則或上一課的完整對話。新對話可用以下開場：
 
-> 請在目前 HKDSE Economics Tutor repository 準備「課題名稱」。今課課題：……；學生目前進度/先備知識：……；請只查閱相關 syllabus 部分和 `past-papers/index.md` 中對應的試題。建立或更新該課的 student pack、tutor guide（包括答案及評分提示）和 metadata。校內進度尚未確認的地方請標示，不要猜測。
+> 請在目前 HKDSE Economics Tutor repository 準備「課題名稱」。今課課題：……；學生目前進度/先備知識：……；請只查閱相關 syllabus 部分和 `past-papers/index.md` 中對應的試題。建立或更新 `student-pack.md`、包含所有練習答案的 `tutor-guide.md` 及 `metadata.md`；只交付學生版和導師版兩份筆記。校內進度尚未確認的地方請標示，不要猜測。
 
 ## 每課教材
 
 每課建立一個按 HKDSE 課題命名的獨立資料夾，例如 `lessons/topic-04-production-factors-scale/`。若同一課題需要多課，資料夾名稱再加上具體子題，例如 `topic-05-short-run-production/` 和 `topic-05-short-run-costs/`，不要用 Week 01、Week 02 等週次作資料夾名稱。每個資料夾使用以下檔案：
 
 - `student-pack.md` — 學生版課堂摘要及練習，可直接轉成 PDF。不要放答案。
-- `tutor-guide.md` — 導師版教學流程、講解重點、Zoom 建議，以及所有練習答案和評分提示。
+- `tutor-guide.md` — 導師版教學流程、講解重點、提問提示及 Zoom 建議；附齊學生版全部答案和評分提示。
 - `metadata.md` — 課題、學校進度、先備知識、來源和歷屆試題引用。
 
-一課可以有 1–2 個相連課題；若同一課題需要不同範例或獨立評估，也可拆成各自清楚命名的課堂資料夾。檔名及結構可按需要調整，但應保持學生版與答案分離。
+一課可以有 1–2 個相連課題；若同一課題需要不同範例或獨立評估，也可拆成各自清楚命名的課堂資料夾。歷史課堂可能仍有獨立 `solutions.md`；新課一律把答案整合在導師版，避免多一份輸出，同時保持學生版與答案分離。
 
-學生講義要讓學生課後能獨立複習：核心概念需由淺入深說明原因和關係，並用至少一個逐步拆解的例子展示推理；不要只列定義或為了增加頁數加入填充內容。每課製作時請沿用 [`student-pack.md` 範本](./templates/student-pack.md) 和 [HKDSE 教學 Skill](./.github/skills/hkdse-economics-teaching-assistant/SKILL.md) 的深度要求。
+學生講義要讓學生課後能獨立複習：核心概念需由淺入深說明原因和關係，並用至少一個逐步拆解的例子展示推理；數值題逐行展示「找資料 → 選公式 → 代入 → 計算 → 寫單位及解讀」，再安排由淺入深的練習。適合時加入自製 SVG 或清晰流程圖，圖像須解釋概念而非只作裝飾。不要只列定義或為了增加頁數加入填充內容。每課製作時請沿用 [`student-pack.md` 範本](./templates/student-pack.md) 和 [HKDSE 教學 Skill](./.github/skills/hkdse-economics-teaching-assistant/SKILL.md) 的深度要求。
+
+若課程有 Topic 4–6 等連續範圍，使用 course map 的覆蓋核對表逐項記錄「已教／待補／待核實」；不得只看課題標題便假設已覆蓋全部子題。移往下一部分前，先補完必教概念並核實更新版 syllabus 的註釋；特別要區分被豁免的曲線關係與仍須教的經濟概念。
 
 ## 自動生成學生 PDF
 
